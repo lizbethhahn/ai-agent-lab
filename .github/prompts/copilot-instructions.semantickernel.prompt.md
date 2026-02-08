@@ -24,6 +24,8 @@ You are assisting with a **C# .NET 8 console application** that uses **Microsoft
 - Prefer small, readable methods with early returns
 - Avoid deep nesting and long methods
 - Use expression-bodied members for simple methods or properties, but only when it enhances readability
+- Do not use emojis, icons, or decorative symbols (e.g., ❌, ✅) in code, comments, logs, or examples.
+- Avoid unnecessary comments; code should be self-explanatory. Use comments to explain *why* something is done, not *what* is being done.
 
 ### Async & Concurrency
 - Use `async`/`await` consistently for I/O-bound work
