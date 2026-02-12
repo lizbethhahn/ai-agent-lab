@@ -45,6 +45,9 @@ if (!string.IsNullOrEmpty(githubToken))
     // Register the TimePlugin
     kernelBuilder.Plugins.AddFromType<TimePlugin>();
 
+    // Register the WeatherPlugin
+    kernelBuilder.Plugins.AddFromType<WeatherPlugin>();
+
     // Build the Semantic Kernel instance
     var kernel = kernelBuilder.Build();
 
@@ -55,7 +58,8 @@ if (!string.IsNullOrEmpty(githubToken))
     {
         "What time is it right now?",
         "What is 25 * 4 + 10?",
-        "Reverse the string 'Hello World'"
+        "Reverse the string 'Hello World'",
+        "What is the weather like today?"
     };
 
     // Get the chat completion service
